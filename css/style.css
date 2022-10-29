@@ -5,7 +5,7 @@ body {
   font-family: Lato, sans-serif;
 }
 
-.aaa {
+.header {
   width: 500px;
   margin: 0 auto;
   display: block;
@@ -16,31 +16,32 @@ body {
   width: 100%;
 }
 
-.aaa .more_inf {
+.header__link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
 
-.aaa {
+.header {
   text-align: center;
 }
 
 }
 
-.centered-main-page-element {
+.main {
   display: block;
   width: 500px;
   margin: 0 auto;
 }
 
-.task {
+.task-list__task {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
+  word-wrap: break-word;
 }
 
-.task-row-wrapper {
+.template-task__block {
   display: flex;
 }
 
@@ -76,7 +77,7 @@ button {
 /* Heading */
 
 .h3,
-.new-task {
+.template-task__header {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -86,7 +87,7 @@ button {
   text-transform: uppercase;
 }
 
-.text {
+.task__text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -99,13 +100,13 @@ button {
   color: #888;
 }
 
-.text:focus {
+.task__text:focus {
   color: #333;
 }
 
 /* New Task */
 
-.new-task {
+.template-task__header {
   display: block;
   margin: 0 0 20px;
 }
@@ -116,7 +117,7 @@ button {
 
 /* Task list */
 
-.list {
+.task-list {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -125,49 +126,49 @@ button {
   align-items: center;
 }
 
-.checkbox {
+.task-list__checkbox {
   margin: 0 10px;
 }
 
-.label {
+.task__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.text {
+.task__text {
   width: 226px;
 }
 
-.close {
+.button__delete-img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.close:hover {
+.button__delete-img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
 
-#completed-tasks .label {
+#completed-tasks .task__label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 
-.list .text {
+.task-list .task__text {
   display: none;
 }
 
-.editMode .text {
+.editMode .task__text {
   display: inline-block;
   width: 224px;
 }
 
-.editMode .label {
+.editMode .task__label {
   display: none;
 }
