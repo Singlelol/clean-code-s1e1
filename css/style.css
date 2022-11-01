@@ -164,11 +164,11 @@ button {
   display: none;
 }
 
-.editMode .task__text {
+.task-list__edit .task__text {
   display: inline-block;
   width: 224px;
 }
 
-.editMode .task__label {
+.task-list__edit .task__label {
   display: none;
 }
