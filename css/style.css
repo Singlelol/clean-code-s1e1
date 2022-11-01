@@ -153,7 +153,7 @@ button {
 
 /* Completed */
 
-.tasks-list__complete .task__label {
+.tasks-list_complete .task__label {
   text-decoration: line-through;
   color: #888;
 }
@@ -164,11 +164,11 @@ button {
   display: none;
 }
 
-.task-list__edit .task__text {
+.task-list_edit .task__text {
   display: inline-block;
   width: 224px;
 }
 
-.task-list__edit .task__label {
+.task-list_edit .task__label {
   display: none;
 }
